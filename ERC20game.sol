@@ -54,7 +54,7 @@ contract ERC20 {
         totalSupply -= amount;
         emit Transfer(msg.sender, address(0), amount);
     }
-    function collect_items(uint input)external pure returns(string memory){
+    function outfit_change(uint input)external pure returns(string memory){
         assert(input>0);
         if(input==1){
             return "Player currently wearing leather jacket with jeans";
